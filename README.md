@@ -31,11 +31,7 @@ const Rebar = useRebar();
 const api = Rebar.useApi();
 
 async function giveMoney(player: alt.Player) {
-    alt.log('Spawned!');
-
     await alt.Utils.wait(5000);
-
-    Rebar.player.useWorld(player).setWeather('CLOUDS', 5);
 
     const { showNotification } = Rebar.player.useNotify(player);
 
