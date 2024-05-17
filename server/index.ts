@@ -125,7 +125,7 @@ function useCurrency<K extends keyof CurrencyDefinitions>(playerOrDatabaseId: al
             type as keyof CharacterCurrencies & keyof AccountCurrencies,
         );
 
-        return amount > currency;
+        return currency > amount;
     }
 
     /**
